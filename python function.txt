@@ -96,15 +96,26 @@ a=input("list=").split()
 print(a)
 """
 
-
+"""
 
 a=int(input("enter first number =" ))
 b=int(input("enter second number ="))
 
 c=a*b
 print("result is " , c)
+"""
 
 
+
+
+
+"""
+a=str(input("enter a steing : "))
+b=str(input("enter another string : "))
+
+c= a+b
+print("concatination string id : ",c)
+"""
 
 
 
