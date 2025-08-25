@@ -1,0 +1,152 @@
+#python_function
+
+
+
+def name():
+    print("mehedi")
+name()
+
+
+
+
+
+list=["mehedi","tamim","khokon"]
+print(list)
+
+
+
+
+def listPrint(my_list):
+    print(my_list)
+
+number=[1,2,3,4,5]
+listPrint(number)
+
+
+
+
+
+def child(a,b,c):
+    print("Mehedi= " +a)
+    
+child(a="dummy",b="good",c="best")
+
+
+
+
+def FullName(fn,ln):
+    print(fn + " " +ln )
+    
+FullName(fn="Mehedi", ln="Hasan")
+
+
+
+def suppix(fn):
+    print(fn + " Hasan")
+
+suppix("Mehedi")
+suppix("Tamim")
+suppix("khokon")
+
+
+
+
+
+def function(*kids):
+    print("i want " + kids[1])
+    
+function("mehedi","tamim","khokon")
+
+
+
+
+
+
+
+def function(**kds):
+    print("his first name is : " + kds["fname"])
+    
+function(fname="mehedi", lname= "Hasan ")
+
+
+
+def country(c="Norway"):
+    print("i am from " + c)
+country("india")
+country("japan")
+country()
+country("Brazil")
+
+
+
+
+
+def function(food):
+    for x in food:
+        print(x)
+        
+fruits=["banana","mango","orange"]
+
+function(fruits)
+    
+
+"""
+#list input
+a=input("list=").split()
+print(a)
+"""
+
+
+
+a=int(input("enter first number =" ))
+b=int(input("enter second number ="))
+
+c=a*b
+print("result is " , c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
