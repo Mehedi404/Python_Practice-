@@ -1,0 +1,186 @@
+#list + function
+
+#.strip()->> remove extra spase
+#.lower()->> upper case to lower case 
+#.split()->> brakedown a sentence to words
+
+
+
+"""
+
+city_list=["dhaka","jessor","khulna"]
+def validation(city:int):
+    print("your city is : ", city.)
+    if city in city_list:
+        return True
+    return False
+
+user_city=str(input("Enter city: ")).strip().lower() # .strip()->> remove extra spase 
+result=validation(user_city)
+print("your city : ", result)
+
+"""
+
+
+"""
+a=str(input("enter a sentence : ")).split()  #brakedown words
+print("the brakedown words is : ",a)
+"""
+
+
+"""
+def function(**name):
+    print("his last name is " +name["lname"])
+function(fname="mehedi",lname="hasan")
+"""
+
+
+
+
+"""
+def function(fname,lname):
+    print(fname + " " + lname )
+function(fname="mehedi",lname="hasan")
+
+"""
+
+
+
+"""
+def function(a="mehedi"):
+    print("i am" , a)
+function("tamim")
+function("khokon")
+function()
+"""
+
+"""
+def function(food):
+    for a in food:
+        print(a)
+     
+list_of_fruits=["banana","mango","orange","pinaple"]
+list_of_SF=input("enter items: ").split(",") #split()->> list, split(",")->>on after another up to down
+function(list_of_SF)
+function(list_of_fruits)
+"""
+
+
+
+"""
+
+def function(name):
+    for n in name:
+        print("list of the name : ", n)
+        
+name_list=input("enter names: ").split()
+function(name_list)
+
+"""
+
+
+
+"""
+list=["mehedi","khokon","tamim"]
+print(list[1])
+print(list[2])
+print(list[0])
+"""
+
+
+"""
+list=["mehedi","khokon","tamim"]
+print(len(list)) #lenth of list items
+"""
+
+
+"""
+list=["mehedi","khokon","tamim"]
+list.append("mehabub")     # add another item by append 
+print("the list is : ", list)
+"""
+
+
+
+"""
+list=["mehedi","khokon","tamim"]
+list.insert(1,"mahabub")    #insert on index 1 
+print("new list is: " , list)
+"""
+
+
+"""
+list=["mehedi","khokon","hasan","tamim"]
+list.remove(list[2])
+print(list)
+"""
+
+
+"""
+list= ["a","b","c","d"]
+list.pop()   #remove last item
+print(list)
+
+"""
+
+"""
+list=["mehedi","khokon","tamim","hasan","mahabub"]
+list[1:3]=["a","b"]
+print(list)
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
