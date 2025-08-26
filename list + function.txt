@@ -10,7 +10,7 @@
 
 city_list=["dhaka","jessor","khulna"]
 def validation(city:int):
-    print("your city is : ", city.)
+    print("your city is : ", city)
     if city in city_list:
         return True
     return False
