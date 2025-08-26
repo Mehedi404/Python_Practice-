@@ -260,7 +260,70 @@ print(list2)
 
 
 
+#tuple...................................
 
+
+
+"""
+tuple=("mehedi","hasan","khokon","tamim")
+print("Tuple is : " , tuple)
+print("length is : " ,len(tuple))
+"""
+
+
+
+"""
+tupleee=("apple",)       #<class 'tuple'>,,,,To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+
+print(type(tupleee))
+"""
+
+
+
+"""
+tuple=("mehedi",24,True,)  #string, int,boolean 
+print("Tuple is : ",tuple)
+print("Tuple length is : ",len(tuple))
+"""
+
+
+
+"""
+x=("banana","mango","wiki","orange")
+y=list(x)
+y[2]="malta"
+x=tuple(y)
+print(x)
+"""
+
+
+
+"""
+tuple=("mehedi","khokon","tamim")
+y=("Hasan",)
+tuple += y
+print(tuple)
+"""
+
+"""
+name=("mehedi","khokon","tamim","hasan")
+y = list(name)
+y.remove("hasan")
+name=tuple(y)    #Convert tuple into a list, change item, convert back into a tuple.
+print(y)
+
+"""
+
+
+"""
+name=("mehedi","khokon","tamim","hasan")
+i=0
+
+while i< len(name):
+    print("name is ",name[i],"and index is : ",i)
+    i+=1
+"""
+    
 
 
 
