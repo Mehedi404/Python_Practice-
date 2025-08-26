@@ -131,6 +131,133 @@ print(list)
 
 
 
+"""
+list=["a","b","c","d"]
+def check(letter):
+    print("you want : " ,letter)
+    if letter in list: 
+        return True
+    return False
+
+user_input=input("enter a letter: ").strip().lower()
+result=check(user_input)
+print(result)
+"""
+
+
+
+
+
+"""
+list=["a","b","c","d"]
+for i in range(len(list)):  # for loop through the index numbers by using len()
+    print(list[i])
+
+"""
+
+"""
+list=["a","b","c","d","e"]
+i=0
+while i < len(list):    # while loop through the index numbers by using len()
+    print(list[i])
+    i+=1
+    
+"""
+
+"""
+list=["mehedi","khokon","tamim","hasan",1,2,3,4,5,6,7,8]
+m=0
+while m<len(list):
+    print(list[m])
+    m+=2
+"""
+
+
+
+"""
+list=[1,4,3,6,8,7,6,5,6,55,74,5,752,5,4,2,55,0]
+list.sort()  #sort list 
+print(list)
+"""
+
+
+"""
+list=["mehedi","tamim","khokon"]
+list.sort()
+print(list)
+"""
+
+"""
+list=[1,5,3,5,8,7,9,6,4,7,9]
+list.sort(reverse=True)
+print(list)
+
+"""
+
+
+"""
+def function(n):
+    return abs(n-3)   # Sort the list based on how close the number is to 3
+list=[1,5,3,8,9,6,4,7,2]
+list.sort(key=function)
+print(list)
+
+"""
+
+
+
+"""
+def function(n):
+    return abs(n-5)
+
+list=[8,9,6,4,5,0,1,6,4]
+list.sort(key=function)
+print(list)
+
+"""
+
+
+"""
+list=[1,4,3,6,8,7,6,5,6,55,74,5,752,5,4,2,55,0]
+my_list=list.copy()  #copy list,,,,,,,,,, 
+my_list.sort() 
+another_list=my_list.copy()
+another_list.sort(reverse=True)
+
+print(my_list)
+print(another_list)
+"""
+
+
+"""
+list1=[1,4,5,6,9,8,7]
+list2=["mehedi","khokon","tamim"]
+list3= list1 + list2    # list join 
+print(list3)
+"""
+
+
+
+"""
+list1=[1,4,5,6,9,8,7]
+list2=["mehedi","khokon","tamim"]
+for x in list2:      # by using for loop add other list by append
+    list1.append(x)
+print(list1)
+"""
+
+
+
+
+"""
+list1=[1,4,5,6,9,8,7]
+list2=["mehedi","khokon","tamim"]
+
+list2.extend(list1)
+print(list2)
+"""
+
+
 
 
 
