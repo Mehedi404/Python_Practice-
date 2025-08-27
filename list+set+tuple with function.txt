@@ -1,0 +1,199 @@
+"""
+list=["mehedi","jibon","khokon","tamim"]
+list.append("hasan")
+print("Update list is : ",list)
+list[2]="mahabub"
+print(list)
+list[2:3]=1,2
+print(list)
+list.remove("jibon")
+print(list)
+list.pop()
+print(list)
+list1=input("enter a list: ").split()
+list2=input("enter another list: ").split()
+list3= list1+list2
+print(list3)
+"""
+
+"""
+list1=list(map(int,input("enter a list : ").split()))
+set2=set(map(int,input("enter a set: ").split()))
+tuple3=tuple(map(int,input("enter a tuple : ").split()))
+print("your list is : ",list1)
+print("your set is : ",set2)
+print("your Tuple is : ",tuple3)
+
+
+"""
+
+"""
+list=["dhaka","khulna","jesor","kumilla","sirajgonj"]
+def function(city):
+    print("your city is :",city)
+    if city in list:
+        return True
+    return False
+
+enter_city=str(input("enter a city : ")).strip().lower()
+r=function(enter_city)
+print(r)
+"""
+
+
+
+"""
+list1=list(map(int, input("enter a list : " ).split()))   # input : 1,2,3
+print(list1)
+n=int(input("enter n for mult :" ))                       #input : 3
+print(n)
+
+list3=list1 * n      
+print(list3)                                              #result = [1,2,3,1,2,3,1,2,3]
+
+"""
+
+
+
+
+"""
+list1=list(map(int,input("enter list1 : ").split()))
+print("Your Given List1 is : ",list1)                #Your Given List1 is :  [1, 2, 3]
+
+n=int(input("enter a number : "))                    #enter a number : 3
+
+mult=[a * n for a in list1] 
+print(mult)                                          # [3, 6, 9]
+"""
+
+
+
+
+"""
+list1=list(map(int,input("enter list1 : ").split()))   #enter list1 : 1 2 3
+print("Your Given List1 is : ",list1)     
+list2=list(map(int,input("enter list2 : ").split()))   #enter list2 : 3 2 1
+print("Your GIven List2 is : ",list2) 
+
+mult=[a * b for a,b in zip(list1,list2)]
+print(" mult ans is :" , mult)                         #mult ans is :[3, 4, 3]
+
+"""
+
+
+"""
+list1=list(map(int,input("enter list1 : ").split())) #enter list1 : 1 2 3
+print("your list1 : ",list1)
+list2=list(map(int,input("enter list2 : ").split())) #enter list2 : 3 2 1
+print("your list2 : ",list2)
+
+mult=[a*b for a in list1 for b in list2]
+print(mult)                                          #[3, 2, 1, 6, 4, 2, 9, 6, 3]
+
+"""
+
+
+
+"""
+def mult_function(list1,list2):
+    mult1=[a*b for a,b in zip(list1,list2)]
+    return mult1
+    
+
+list1=list(map(int,input("enter list1 : ").split())) #enter list1 : 1 2 3
+list2=list(map(int,input("enter list2 : ").split())) #enter list2 : 1 2 3
+ 
+result = mult_function(list1,list2)
+print(result)                                        #[1,4,9]
+
+"""
+
+
+"""
+#for set................
+def set_mult(set1,set2):
+    mult={a*b for a,b in zip(set1,set2)}
+    return mult
+    
+    
+set1=set(map(int,input("enter set1: ").split()))
+set2=set(map(int,input("enter set2: ").split()))
+
+result= set_mult(set1,set2)
+print(result)
+
+"""
+
+
+
+
+"""
+#for tuple.....................
+def tm(t1,t2):
+    mult=tuple(a*b for a,b in zip(t1,t2))
+    return mult
+    
+t1=tuple(map(int,input("enter t1: ").split()))
+t2=tuple(map(int,input("enter t2: ").split()))
+
+result= tm(t1,t2)
+print(result)
+
+"""
+
+
+"""
+#for list................
+def list_mult(set1,set2):
+    mult=[a*b for a,b in zip(list1,list2)]
+    return mult
+    
+    
+list1=set(map(int,input("enter list1: ").split()))
+list2=set(map(int,input("enter list2: ").split()))
+
+result= list_mult(list1,list2)
+print(result)
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
