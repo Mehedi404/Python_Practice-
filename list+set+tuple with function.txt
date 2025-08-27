@@ -162,12 +162,250 @@ print(result)
 
 
 
+"""
+#Dictionary .................................
+dict={
+    "name":"mehedi",
+    "age":"24",
+    "email":"mehedi.cse74@gmail.com",
+    "phone":"01580580377"
+}
+
+print(dict)
+
+"""
+
+
+
+
+"""
+person={
+    "name":"mehedi",
+    "age":"24",
+    "email":"mehedi.cse74@gmail.com",
+    "phone":"01580580377"
+}
+
+x=person.keys()     # this print keys(),,,,,,,,,,,,,,,,,,,,,,,,,,,
+print("only keys : ",x)
+
+x=person.values()   #this print values........
+print("only values : ",x)
+
+x=person.items()
+print("only items : ",x)
+
+
+person["address"]="uttara"   # add another value ........
+print("Add new value : ",x)
+
+person["email"]="mehedi@gmail.com"
+print("Change value : ",x)
+
+person["DoB"]=["31/8/2001"]
+print("add another value :",person)
+
+person.pop("address")
+print("My Update dict : ",person)
+
+"""
+
+
+
+"""
+
+nested_dict={
+    "child1":{
+        
+        "name":"joy",
+        "age":"24",
+    },
+    
+    "child2":{
+        
+        "name":"jack",
+        "age":"17",
+    }
+}
+
+
+print(nested_dict)
+
+"""
+
+
+
+
+"""
+# else if in python 
+a=int(input("enter a number : "))
+b=int(input("enter b number : "))
+c=int(input("enter c number : "))
+
+
+
+if a<b and c<b:
+    print("b is biger numner",b)
+elif b<a and c<a:
+    print("a is biger numner",a)
+elif a<c and b<c:
+    print("c is biger nunmer",c)
+elif a==b==c:
+    print("all numbers are equal")
+    
+else:
+    print("please enter valid number")
+
+"""
+
+
+
+
+
+"""
+#match statment..............
+
+day=int(input("enter a number (1 to 7) : "))
+
+match day:
+    case 1:
+        print("Saturday")
+    case 2:
+        print("Sunday")
+    case 3:
+        print("Monday")
+    case 4:
+        print("Tuesday")
+    case 5:
+        print("Wednesday")
+    case 6:
+        print("Thursday")
+    case 7:
+        print("Friday")
+    case _:
+        print("No Match")
+    
+"""
 
 
 
 
 
 
+"""
+#for loop ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+number1=input("enter some number : ").split()
+
+for x in number1:
+    if x=="5" or x=="6":
+        continue                                # continue means without this thing.....
+    print(x)
+    
+    
+number2=input("enter some number : ").split()
+
+for i in number2:
+    print(i)
+    if i=="7":
+        break                               # break means up to this ......
+        
+        
+        
+"""
+
+
+
+"""
+n=int(input("start value : "))
+m=int(input("end value : "))
+o=int(input("steps : "))
+
+for x in range(n,m,o):
+    if 20<x:
+        print("your range is 20")
+        break
+        
+    print(x)
+    
+else:
+    print("finish print")
+
+"""
+
+
+
+
+
+    
+"""
+    
+i=0
+while i<=50:
+    print(i)
+    i+=1
+    if i==25:
+        break
+    i+=1
+    
+"""
+    
+    
+    
+"""
+array1=list(map(int,input("enter your array1 : ").split()))
+#print("your given array1 : ",array1)
+array2=list(map(int,input("inter your array2 : ").split()))
+#print("your given array2 :",array2)
+
+#mult=[a*b for a,b in zip(array1,array2)]
+mult=[a*b for a in array1 for b in array2]
+print("your mult valur is : ",mult)
+"""
+
+
+"""
+
+def mult_array(array1,array2):
+    mult=[a*b for a,b in zip(array1,array2)]
+    return mult
+
+    
+array1=list(map(int,input("enter your array1 : ").split()))
+array2=list(map(int,input("inter your array2 : ").split()))
+
+result=mult_array(array1,array2)
+print(result)
+
+"""
+
+
+
+"""
+
+car=["BMW","TOYOTA","MITSUBISHI"]
+x=len(car)
+print(x)
+car.append("HONDA")
+print(car)
+
+car.pop()
+print(car)
+
+car.pop(1)
+print(car)
+
+x=car.copy()
+print(x)
+
+x = car.count("BMW")
+print(x)
+
+
+import datetime
+x=datetime.datetime.now()
+print("Now Time is : ", x)
+"""
 
 
 
