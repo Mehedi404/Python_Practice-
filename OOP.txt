@@ -54,6 +54,260 @@ print("tuple mult result is : ",result3)
 
 
 
+"""
+#..................................OOP...................................
+class person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+p1=person("mehedi",24)
+print("person name is : ",p1.name)
+print("person age is : ",p1.age)
+"""
+
+
+
+
+"""
+class person:
+    
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    
+    def __str__(self):
+        return f"{self.name}({self.age})"
+        
+        
+p1=person("mehedi",24)
+print(p1)
+
+"""
+
+
+
+
+"""
+class country:
+    def __init__(self,C_name,C_population):
+        self.C_name=C_name
+        self.C_population=C_population
+        
+        
+    def area(self):
+        print("i am from : ", self.C_name)
+        print("the country population is : ", self.C_population)
+      
+c1=country("Bangladesh",200000000)
+
+c1.area()
+ """
+ 
+ 
+ 
+
+"""
+class person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+    def myfunction(something):
+        print("my name is : ",something.name)
+        print("my age is : ",something.age)
+        
+p1=person("Mehedi",24)
+p1.age=27                                     #modify age .................
+p1.myfunction()
+        
+"""
+
+
+"""
+class fullname:
+    def __init__(self,fname,lname):
+        self.fname=fname
+        self.lname=lname
+        
+    def setname(self):
+        print("my full name is : ", self.fname,self.lname)
+        #print("my full name is : ", self.fname +" "+ self.lname)
+f1=fullname("mehedi","hasan")
+f1.setname()
+"""
+
+
+
+"""
+# create child class ,,,,,,,,,,,,,,
+
+class animal:
+    def __init__(self,name,legs):
+        self.name=name
+        self.legs=legs
+        
+class bird(animal):
+    def __init__(self,name,legs,colore):
+        super().__init__(name,legs)
+        self.colore=colore
+        
+        
+    def printfunction(self):
+        print("animal name is : " ,self.name)
+        print("animal has : " , self.legs, "legs")
+        print("animal colore is : ",self.colore)
+
+b1=bird("parot",2,"red")
+b1.printfunction()
+
+"""
+
+
+"""
+
+class viacle:
+    def __init__(self,name,model,country,year):
+        self.name=name
+        self.model=model
+        self.country=country
+        self.year=year
+        
+        
+class car(viacle):
+    def __init__(self,name,model,country,year,fueltype):
+        super().__init__(name,model,country,year)
+        self.fueltype=fueltype
+        
+    def show_info(self):
+        print("Name of the car is:", self.name)
+        print("Model of the car is:", self.model)
+        print("Builder country is:", self.country)
+        print("Year:", self.year)
+        print("Fuel type of the car is:", self.fueltype)
+            
+
+
+            
+class bus(viacle):
+    def __init__(self,name,model,country,year,fueltype,company):
+        super().__init__(name,model,country,year)
+        self.fueltype=fueltype
+        self.company=company
+        
+        
+    def show_info(self):
+        print("Name of the bus is:", self.name)
+        print("Model of the bus is:", self.model)
+        print("Builder country is:", self.country)
+        print("Year:", self.year)
+        print("Fuel type of the bus is:", self.fueltype)
+        print("Bus company is:", self.company)
+        
+
+
+
+
+c1=car("TOYOTA","AQUA","Japan",2019,"Diesel with battery")  
+b1=bus("HANIF","A8QPP15Q","China",2021,"Diesel","Mercedes")
+
+print("----------------------for car-------------------------")
+c1.show_info()
+print("----------------------for Bus-------------------------")
+b1.show_info()
+
+"""
+         
+
+
+
+"""
+#....................polymorphism (mathode overliading).................
+   
+class vaicle:
+    def __init__(self,name,model):
+        self.name=name
+        self.model=model
+        
+        
+class car(vaicle):
+    def move(self):
+        print("car can move")
+    
+    
+class boat(vaicle):
+    def move(self):
+        print("boat can sail")
+        
+        
+class plain(vaicle):
+    def move(self):
+        print("plain can fly")
+        
+        
+        
+c1=car("TOYOTA","Aqua")
+b1=boat("Titanic",1911)
+p1=plain("Boeing",777)
+
+for x in (c1,b1,p1):
+    print(x.name)
+    print(x.model)
+    x.move()
+
+"""
+
+"""
+#............................Function Polymorphism............................
+print("length is the message is : ",len("mehedi hasan"))
+print("lenth of the list is : ",len([1,2,3]))
+print("length of dictionary is : ",len({"Age":"55"}))
+"""
+
+
+
+"""
+#'''''''''''''''''''''''''''''''''operator overloading...............................
+print(10+10)
+print("mehedi" + "hasan")
+print([1,2] + [2,1])
+"""
+
+
+
+
+
+
+"""
+from abc import ABC, abstractmethod
+
+class viacle(ABC):
+    @abstractmethod
+    def move(self):
+        pass
+    
+    def fuel(self):
+        print("need fuel")
+        
+        
+class car(viacle):
+    def move(self):
+        print("car make sound ")
+
+class plain(viacle):
+    def move(self):
+        print("it can fly")
+        
+        
+c1=car()
+c1.move()
+c1.fuel()
+
+p1=plain()
+p1.move()
+
+"""
+
 
 
 
