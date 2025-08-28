@@ -1,5 +1,23 @@
 
 """
+city_list=["dhaka","jessor","khulna"]
+def function(city):
+    print("your city is : ",city)
+        
+    if city in city_list:
+        return True
+    return False
+    
+
+user_city=str(input("enter a city : ")).strip().lower()
+result=function(user_city)
+print("result is : ",result)
+"""
+
+
+
+
+"""
 list1=list(map(int,input("put some int number for your list : ").split()))
 tuple1=tuple(map(int,input("put some tuple value : ").split()))
 set1=set(map(int,input("put some value for your set : ").split()))
@@ -298,13 +316,27 @@ class plain(viacle):
     def move(self):
         print("it can fly")
         
-        
+class boat(viacle):
+    def __init__(self,name,year):
+        self.name=name
+        self.year=year
+    
+    def move(self):
+        print("name of the boat is : ",self.name)
+        print("year of the boat : ", self.year)
+    
+
+    
 c1=car()
 c1.move()
 c1.fuel()
+b1=boat("Titanic",1911)
 
 p1=plain()
 p1.move()
+b1.move()
+
+
 
 """
 
