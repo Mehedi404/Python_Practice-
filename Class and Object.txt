@@ -1,0 +1,122 @@
+
+
+"""
+class animal:
+    def __init__(self,name):
+        self.name=name
+       
+        
+class bird(animal):
+    def __init__(self,name,legs,wings):
+        super().__init__(name)
+        self.legs=legs
+        self.wings=wings
+        
+    def display1(self):
+        print("bird name is : ",self.name)
+        print("bird has " , self.legs," legs")
+        print("bird has ", self.wings, " wings")
+        
+class dog(animal):
+    def __init__(self,name,legs,country,sound):
+        super().__init__(name)
+        self.legs=legs
+        self.country=country
+        self.sound=sound
+        
+        
+    def display2(self):
+        print("dog name is : ",self.name)
+        print("dog from ",self.country, "country")
+        print("dogs has ",self.legs," legs")
+        print("dog make sound like : ",self.sound)
+        
+        
+class man(animal):
+    def __init__(self,name,age,address):
+        super().__init__(name)
+        self.age=age
+        self.address=address 
+        
+        
+        
+    def display3(self):
+        print("his name is : ",self.name)
+        print("his age is : ",self.age)
+        print("his address : ",self.address)
+        
+        
+        
+b1=bird("Parot",2,2)
+d1=dog("BOB",4,"Germany","wooo wooo")
+m1=man("mehedi",24,"Uttara")
+
+
+b1.display1()
+print()
+d1.display2()
+print()
+m1.display3()
+
+"""
+     
+        
+        
+"""     
+class dog:
+    sound="woo woo"
+    
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+        
+    def printf(self):
+        print(self.name)
+        print(self.age)
+        
+        
+class m(dog):
+    def __init__(self,name,age,add):
+        super().__init__(name,age)
+        self.add=add
+        
+        
+    def printff(self):
+        print(self.name)
+        print(self.age)
+        print(self.add)
+        
+        
+d1=dog("BOB",4)
+m1=m("yoyo",11,"Uttara")
+
+
+print(d1.sound)
+d1.printf()
+m1.printff()
+
+"""
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
