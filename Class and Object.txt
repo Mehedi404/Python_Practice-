@@ -97,11 +97,68 @@ d1.printf()
 m1.printff()
 
 """
+        
+        
+
+
+"""
+city1=["dhaka","khulna","jessor"]
+def function(city):
+    print(city)
+    
+    if city in city1:
+        return True
+    return False
+    
+    
+user_city=str(input("enter a city : ")).strip().lower()
+result=function(user_city)
+print(result)
+"""
 
 
 
+"""
+class dog:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+        
+    def __str__(self):
+        return f"{self.name} is {self.age} years old."
 
 
+dog1=dog("BOB",10)
+dog2=dog("OGGY",7)
+
+print(dog1)
+print(dog2)
+"""
+
+"""
+class human:
+    def __init__(self,name,age,gender,income):
+        self.name=name
+        self.age=age
+        self.gender=gender
+        self.income=income
+
+        
+        
+    def __str__(self):
+        return f"his name is {self.name} and age {self.age}, he is a {self.gender} and his income is {self.income} "
+        
+        
+m1=human("mehedi",24,"male","1200$")
+m2=human("humayun",25,"male","1233$")
+
+print(m1)
+print()
+print(m2)
+"""     
+    
+        
         
         
         
