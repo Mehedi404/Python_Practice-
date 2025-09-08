@@ -1,0 +1,351 @@
+
+"""
+list1=["dhaka","khulna","feni"]
+def function(city):
+    print("your city is :  ", city)
+    if city in list1:
+        return True
+    return False
+    
+    
+your_city=str(input("enter your city : ")).strip().lower()
+r=function(your_city)
+print(r)
+"""
+
+
+"""
+name=["mehedi","khokon","tamim"]
+def function(NAME):
+    print("your name is : ", NAME)
+    if NAME in name:
+        return True
+    return False 
+    
+inputname=str(input("enter your name : ")).strip().lower()
+r=function(inputname)
+print(r)
+"""
+
+"""
+fruits=["mango","banana","apple","orange"]
+def function(fru):
+    print("your fruit is : ",fru)
+    if fru in fruits:
+        return True 
+    return False 
+
+
+inp=str(input("enter fruit: ")).strip().lower()
+r=function(inp)
+print(r)
+"""    
+
+"""
+
+list1=list(map(int,input("enter a list : ").split()))
+set1=set(map(int,input("enter set : ").split()))
+tupple=tuple(map(int,input("entet tuple: ").split()))
+
+print(list1)
+print(set1)
+print(tupple)
+"""
+
+"""
+def function(n):
+    print("your name is :" ,n)
+function(n="mehedi")
+"""
+
+
+
+"""
+def function(fname,lname):
+    print(" full name is : ", fname + " " + lname)
+    
+function(lname="hasan",fname="mehedi")
+"""
+
+
+"""
+list1=list(map(int,input("enter list1 : ").split()))
+list2=list(map(int,input("enter list2 : ").split()))
+
+#mult=[a*b for a,b in zip(list1,list2)]
+mult=[a*b for a in list1 for b in list2]
+print(mult)
+"""
+"""
+def multfunction(l1,l2):
+    mult=[a*b for a,b in zip(l1,l2)]
+    return mult
+    
+    
+    
+l1=list(map(int,input("enter list1 : ").split()))
+l2=list(map(int,input("enter list2 : ").split()))
+
+result=multfunction(l1,l2)
+print(result)
+"""
+
+
+"""
+def addfunction(a1,a2):
+    add=[a+b for a,b in zip(a1,a2)]
+    return add
+    
+    
+a1=list(map(int,input("enter a1 : ").split()))
+a2=list(map(int,input("enter a2 : ").split()))
+
+result=addfunction(a1,a2)
+print(result)
+"""
+
+"""
+class viacle:
+    def __init__(self,name,model):
+        self.name=name
+        self.model=model
+        
+class car(viacle):
+    def __init__(self,name,model,fuel,year):
+        super().__init__(name,model)
+        self.fuel=fuel
+        self.year=year
+    
+    
+    def display(self):
+        print(self.name,self.model,self.fuel,self.year)
+        
+c1=car("TOYOTA","AQUA19","gas",2018)
+c1.display()
+"""
+        
+        
+        
+"""       
+class viacle:
+    def __init__(self,name,model,year):
+        self.name=name
+        self.model=model
+        self.year=year
+        
+        
+class car(viacle):
+    def __init__(self,name,model,year,country):
+        super().__init__(name,model,year)
+        self.country=country 
+
+
+    def cardisplay(self):
+        print(self.name,self.model,self.year,self.country)
+        
+class plane(viacle):
+    def __init__(self,name,model,year,country,seet):
+        super().__init__(name,model,year)
+        self.country=country
+        self.seet=seet
+        
+    def planedisplay(self):
+        print(self.name,self.model,self.year,self.country,self.seet)
+        
+c1=car("BMW","x9",2025,"USA")
+p1=plane("BOLAKA","boing-777",2023,"Bangladesh",317)
+
+print("-----------------------for car-------------------------")
+c1.cardisplay()
+print("-----------------------for plane-----------------------")
+p1.planedisplay()
+
+    
+"""
+
+"""
+
+city_list=["dhaka","khulna","feni"]
+def function(city):
+    print("your city is : ", city)
+    if city in city_list:
+        return True
+    return False
+
+your_city=str(input("enter city: ")).strip().lower()
+r=function(your_city)
+print(r)
+
+"""
+
+"""
+class animal:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+    def __str__(self):
+        return f"the name of the animal is {self.name} and age is {self.age}."
+        
+        
+        
+a1=animal("Oggy",5)
+a2=animal("BOB",7)
+
+print(a1)
+print(a2)
+    
+
+class country:
+    def __init__(self,C_name,C_population):
+        self.C_name=C_name
+        self.C_population=C_population
+        
+        
+    def __str__(self):
+        return f"i am from {self.C_name} and population is {self.C_population}."
+      
+c1=country("Bangladesh",200000000)
+
+print(c1)
+
+
+
+dect={
+    "name":"mehedi",
+    "age": 24
+}
+
+print("dect is : ", dect)
+
+
+"""
+"""
+list1=["dhaka","feni","khulna"]
+def function(listt):
+    print("your city is :",listt)
+    if listt in list1:
+        return True 
+    return False 
+    
+inp=str(input("enter your city : ")).strip().lower()
+result=function(inp)
+print(result)
+"""
+
+"""
+def function(fname,lname,ag):
+    print("for this man the first name is" ,fname ,"and the last name is" ,lname, "and the age is ",ag)
+    print("so full name is : ", fname + " " +lname)
+    print("and age is : ",ag)
+
+function(fname="mehedi", lname="hasan",ag=24)
+
+"""
+
+
+
+"""
+tuple1=tuple(map(int,input("enter tuple1 : ").split()))
+tuple2=tuple(map(int,input("enter tuple2 : ").split()))
+
+
+
+mult=tuple(a*b for a,b in zip(tuple1,tuple2))
+
+
+print(mult)
+
+"""
+
+
+
+
+class animal:
+    king="The Lion King"                           #Class attribute
+    def __init__(self,name):
+        self.name=name                 #Instance attribute
+        
+        
+class man(animal):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+        
+        
+    def mandisplay(self):
+        print( "his name is" ,self.name, "and age is",self.age)
+        
+
+class dog(animal):
+    def __init__(self,name,color):
+        super().__init__(name)
+        self.color=color
+        
+    def dogdisplay(self):
+        print(self.name, "is a dog and color is",self.color)
+        
+        
+        
+class cat(animal):
+    def __init__(self,name,color):
+        super().__init__(name)
+        self.color=color
+        
+    def __str__(self):
+        return f"this cat name is {self.name} and the color is {self.color}."
+
+    
+        
+
+m1=man("mehedi",24)
+d1=dog("BOB","black")
+c1=cat("OGGY","Blue")
+c2=cat("jack","pink")
+a1=animal()
+
+m1.mandisplay()
+d1.dogdisplay()
+print(c1)
+print(c2)
+print(a1.king)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
