@@ -302,7 +302,7 @@ m1=man("mehedi",24)
 d1=dog("BOB","black")
 c1=cat("OGGY","Blue")
 c2=cat("jack","pink")
-a1=animal()
+a1=animal(" ")
 
 m1.mandisplay()
 d1.dogdisplay()
