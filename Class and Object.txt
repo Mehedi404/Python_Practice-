@@ -163,6 +163,179 @@ print(m2)
         
         
         
+"""
+class world:
+    river="jamuna"
+    def __init__(self,name,area):
+        self.name=name
+        self.area=area
+        
+class ocean(world):
+    def __init__(self,name,area,location):
+        super().__init__(name,area)
+        self.location=location
+        
+    def oceandisplay(self):
+        print("the ocean name is",self.name,"area is",self.area,"and location",self.location)
+        
+        
+class hill(world):
+    def __init__(self,name,area,hight,location):
+        super().__init__(name,area)
+        self.hight=hight
+        self.location=location
+        
+    def hilldisplay(self):
+        print("the hill name is",self.name,"area of this hill is",self.area,"hight is",self.hight,"and the hill location",self.location)
+        
+class forest(world):
+    def __init__(self,name,area,trees,location):
+        super().__init__(name,area)
+        self.trees=trees
+        self.location=location
+        
+    def forestdisplay(self):
+        print("the forest name is",self.name,"area is",self.area,"numbers of trees",self.trees,"forest location",self.location)
+        
+o1=ocean("Atlantic","10812545 km","USA")
+h1=hill("Tagindong","3 km","1280 meter","Bangladesh")
+f1=forest("Amazon","200000 km","186 k","Africa")
+
+
+o1.oceandisplay()
+h1.hilldisplay()
+f1.forestdisplay()
+
+"""
+class turist:
+    def __init__(self,age):
+        self.age=age
+        
+class world:
+    def __init__(self,name,area):
+        self.name=name
+        self.area=area
+        
+class ocean(world):
+    def __init__(self,name,area,location):
+        super().__init__(name,area)
+        self.location=location
+        
+    def oceandisplay(self):
+        print("the ocean name is",self.name,"area is",self.area,"and location",self.location)
+        
+        
+class hill(ocean):
+    def __init__(self,name,area,hight,location):
+        super().__init__(name,area,location)
+        self.hight=hight
+      
+        
+    def hilldisplay(self):
+        print("the hill name is",self.name,"area of this hill is",self.area,"hight is",self.hight,"and the hill location",self.location)
+class forest(ocean):
+    def __init__(self,name,area,trees,location):
+        super().__init__(name,area,location)
+        self.trees=trees
+        
+        
+    def forestdisplay(self):
+        print("the forest name is",self.name,"area is",self.area,"numbers of trees",self.trees,"forest location",self.location)
+        
+        
+class test(world,turist):
+    def __init__(self,name,area,age):
+        world.__init__(self,name,area)
+        turist.__init__(self,age)
+        
+        """
+        or,,,,
+        super().__init__(name,area)
+        turist.__init__(self,age)
+        """
+        
+        
+    def testdisplay(self):
+        print("name of the turist is",self.name,"area",self.area,"turist age is",self.age)
+        
+        
+        
+o1=ocean("Atlantic","10812545 km","USA")
+h1=hill("Tagindong","3 km","1280 meter","Bangladesh")
+f1=forest("Amazon","200000 km","186 k","Africa")
+t1=test("mehedi","hill","24")
+
+o1.oceandisplay()
+h1.hilldisplay()
+f1.forestdisplay()
+t1.testdisplay()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         
         
